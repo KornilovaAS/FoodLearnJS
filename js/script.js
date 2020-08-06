@@ -348,5 +348,8 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     // технология FETCH API встроенная в браузер, позволяет общаться с сервером и она построена на promis
     // jsonplaceholder.com - база для тестирования 
+    fetch('db.json')
+        .then(data => data.json())
+        .then(res => console.log(res));
 
 });
